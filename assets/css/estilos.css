@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #999999;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+}
+
+.grid-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "aside catalogo" "footer footer";
+}
+.grid-container header {
+  background-color: rgb(8, 8, 8);
+  grid-area: header;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: auto;
+}
+.grid-container header nav h1 {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-weight: 800;
+}
+.grid-container .aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  grid-area: aside;
+  background-color: #1c1c1c;
+}
+.grid-container .aside .cat-header {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.grid-container .aside .cat {
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.grid-container .aside .cat span {
+  color: #8d8d8d;
+}
+.grid-container .catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 50px;
+  background-color: #181818;
+  grid-area: catalogo;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 50px;
+}
+.grid-container .catalogo .producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+}
+.grid-container .catalogo .producto img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+.grid-container .catalogo .producto h3 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: white;
+}
+.grid-container .catalogo .producto p {
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #c0c0c0;
+}
+.grid-container .catalogo .producto .btn-comprar {
+  width: 100%;
+  background-color: rgb(179, 156, 41);
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+.grid-container .catalogo .producto .btn-comprar:hover {
+  cursor: pointer;
+  background-color: rgb(211, 176, 0);
+}
+.grid-container footer {
+  background-color: rgb(8, 8, 8);
+  grid-area: footer;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: auto;
+}
+.grid-container footer h5 {
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+}/*# sourceMappingURL=estilos.css.map */
